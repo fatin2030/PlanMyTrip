@@ -17,15 +17,6 @@ session_start();
         else{
             $status = login($userName, $password);
             if($check){
-                if($check){ ?>
-                   <h1>
-               <?php  echo"Wrong password ;" ; ?>
-               <a href="../view/login.php">Try Again</a>
-                   </h1>
-               <?php
-               }
-        
-       
         
                else if ($status) {
                 $_SESSION['flag'] = 'true';
